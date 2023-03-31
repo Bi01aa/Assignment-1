@@ -7,6 +7,6 @@ public class Lava : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadScene("Level 2");
+        SceneManager.LoadScene("Level 1");
     }
 }

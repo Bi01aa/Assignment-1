@@ -17,10 +17,12 @@ public class PlayerLocomotion : MonoBehaviour
 
     private Vector3 moveDirection = Vector3.zero;
     private float rotateX, rotateY;
+    
 
 
     void Start()
     {
+        
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Confined;
         GameManager.ResetGame();
@@ -34,9 +36,11 @@ public class PlayerLocomotion : MonoBehaviour
     {
         if (!MenuController.IsGamePaused)
         {
+            
             Locomotion();
             RotateAndLook();
             PerspectiveCheck();
+
         }
             
     }
@@ -117,6 +121,7 @@ public class PlayerLocomotion : MonoBehaviour
             }
         }
     }
+    
 
 }
 
