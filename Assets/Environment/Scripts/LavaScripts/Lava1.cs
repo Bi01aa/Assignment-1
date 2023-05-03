@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Lava : MonoBehaviour
+public class Lava1 : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
