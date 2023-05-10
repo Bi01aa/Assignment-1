@@ -25,7 +25,7 @@ public class PlayerLocomotion : MonoBehaviour
         
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Confined;
-        GameManager.ResetGame();
+        
 
         characterController = GetComponent<CharacterController>();
         SetCurrentCamera();
@@ -34,7 +34,7 @@ public class PlayerLocomotion : MonoBehaviour
 
     void Update()
     {
-        if (!MenuController.IsGamePaused)
+        
         {
             
             Locomotion();

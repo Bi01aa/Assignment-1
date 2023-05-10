@@ -5,17 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class PlatformColour : MonoBehaviour
 {
-
-
     void OnTriggerEnter(Collider other)
-
     {
-        print(other.name);
-        if (other.name == "Player")
-
+        if (other.gameObject.name == "Platform")
         {
-            GetComponent<Renderer>().material.color = Color.red;
-            Debug.Log("touched");
+            other.GetComponent<MeshRenderer>().material.color = Color.red;
+            Debug.Log("On platform");
         }
     }
+
 }

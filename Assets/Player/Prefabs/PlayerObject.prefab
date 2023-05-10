@@ -441,9 +441,6 @@ GameObject:
   - component: {fileID: 9036689556350092005}
   - component: {fileID: 9036689556350092004}
   - component: {fileID: 7086267777339486761}
-  - component: {fileID: 4097149884941860735}
-  - component: {fileID: 6534687822256635447}
-  - component: {fileID: 8529976306244820509}
   m_Layer: 6
   m_Name: PlayerObject
   m_TagString: Player
@@ -517,46 +514,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   perspective: 0
---- !u!114 &4097149884941860735
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9036689556350092011}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a27f73547c5658469a2938a86ec12f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hitPoints: 100
---- !u!114 &6534687822256635447
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9036689556350092011}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d78247f523a3f546ba6dcda3111e45a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rawDamage: 10
---- !u!114 &8529976306244820509
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9036689556350092011}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebe8a8a30631cf343bd2176126afbd8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxDistanceFromCamera: 10
-  maxInteractableDistance: 3
 --- !u!1 &9036689556528654799
 GameObject:
   m_ObjectHideFlags: 0
