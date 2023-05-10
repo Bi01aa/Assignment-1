@@ -16,7 +16,7 @@ public class UIManager : MonoBehaviour
     }
 
 
-    
+   
 
     public void UpdateTimeUI(float time)
     {

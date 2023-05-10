@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour
 {
@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+
         if (Instance != null && Instance != this)
         {
             Destroy(this);
@@ -23,12 +24,11 @@ public class GameManager : MonoBehaviour
         {
             Instance = this;
         }
-        secondsSinceStart = 0f;
 
         DontDestroyOnLoad(transform.gameObject);
-
+        secondsSinceStart = 0f;
        
-        Instance.UIManager = GetComponent<UIManager>();
+        GameManager.Instance.UIManager = GetComponent<UIManager>();
 
         
     }
@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         secondsSinceStart += Time.deltaTime;
-        UIManager.UpdateTimeUI(secondsSinceStart);
+        GameManager.Instance.UIManager.UpdateTimeUI(secondsSinceStart);
     }
 
     

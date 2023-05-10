@@ -17,6 +17,8 @@ public class PlayerLocomotion : MonoBehaviour
 
     private Vector3 moveDirection = Vector3.zero;
     private float rotateX, rotateY;
+
+    [SerializeField] AudioSource jumpSound;
     
 
 
@@ -72,6 +74,7 @@ public class PlayerLocomotion : MonoBehaviour
             if (Input.GetButton("Jump"))
             {
                 moveDirection.y = jumpSpeed;
+                jumpSound.Play();
             }
             if (Input.GetKey(KeyCode.C))
             {
