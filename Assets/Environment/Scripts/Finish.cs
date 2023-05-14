@@ -10,6 +10,7 @@ public class Finish : MonoBehaviour
         if (other.gameObject.name == "PlayerObject")
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            
         }
     }
 }
